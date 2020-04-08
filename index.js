@@ -30,7 +30,6 @@ function handleClick() {
   if (!colorInterval) {
     colorInterval = setInterval(() => randomColor(), 1000);
   }
-  console.log(colorInterval);
 }
 
 refs.btnStop.addEventListener('click', handleStop);
@@ -39,3 +38,4 @@ function handleStop() {
   clearInterval(colorInterval);
   colorInterval = null;
 }
+
